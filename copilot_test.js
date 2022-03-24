@@ -46,3 +46,25 @@ console.log(numerosImpar);
 // colocar uma carinha macaco no console.log
 
 console.log("\u{1F435}");
+
+// banco
+
+let saldo = +prompt("qual o saldo? ");
+let deposito = +prompt("qual o valor do deposito? ");
+let saque = +prompt("qual o valor do saque? ");
+
+if(deposito > 0) {
+    saldo += deposito;
+}
+if(saque > 0) {
+    saldo -= saque;
+}else if(saque < 0) {
+    console.log("valor invalido");
+}
+if(saldo < 0) {
+    console.log("saldo insuficiente");
+}else if(saldo > 0) {
+    console.log("saldo disponivel");
+}
+console.log(saldo);
+console.log("\u{1F435}");
